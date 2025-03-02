@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="person.css" />
+    <script defer src="person.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">Echosphere</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-icons">
+          <a href="index.html">🏠</a>
+          <a href="network.html">👥</a>
+          <a href="job.html">💼</a>
+          <a href="chat.html">💬</a>
+          <span>🔔</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="profile">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Profile"
+          />
+          <h1>John Doe</h1>
+          <h4>Software Engineer</h4>
+        </div>
+        <div class="links">
+          <a href="job.html">My Network</a><br /><br />
+          <a href="network.html">Network</a> <br /><br />
+          <a href="job.html">Job</a><br /><br />
+          <a href="chat.html">Messaging</a> <br /><br />
+          <a href="">Notifications</a> <br /><br />
+        </div>
+      </aside>
+      <section class="feed">
+        <div class="post-box">
+          <input type="text" placeholder="Start a post..." />
+          <button onclick="createPost()">Post</button>
+        </div>
+        <div class="posts">
+          <div class="post">
+            <h4>Jane Smith</h4>
+            <p>Excited to start my new job!</p>
+            <h5>HTMl,CSS,Javascript,MONGODB, React.js,Node.js,Express.js</h5>
+            <div class="post-image1">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCfiq2_WnwjevLIgEMNrBrjp913wU9zLw5w&s"
+                alt="jan"
+              />
+              <p>the post should view everyone</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="right-sidebar">
+        <h4>People you may know</h4>
+        <div class="suggestion">
+          <p>Michael Scott</p>
+          <button>Add</button>
+        </div>
+        <div class="suggestion">
+          <p>Pam Beesly</p>
+          <button>Add</button>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

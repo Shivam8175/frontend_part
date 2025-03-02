@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f2ef;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: #0a66c2;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar input {
+  flex: 1;
+  max-width: 400px;
+  padding: 8px;
+  border: none;
+  background-color: #eef3f8;
+  border-radius: 4px;
+}
+
+.nav-icons span {
+  margin: 0 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  gap: 20px;
+}
+
+.nav-icons span:hover {
+  color: #0a66c2;
+}
+
+/* Main Layout */
+.container {
+  max-width: 1200px;
+  margin: 80px auto 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.sidebar-links a {
+  display: block;
+  padding: 10px 0;
+  color: #666;
+  text-decoration: none;
+}
+
+.sidebar-links a:hover {
+  color: #0a66c2;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-input {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-input .user-avatar {
+  border-radius: 50%;
+}
+
+.post-input textarea {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.post-input button {
+  padding: 5px 15px;
+  background-color: #0a66c2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.post-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.post-header img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.post-header div {
+  flex: 1;
+}
+
+.post-header h4 {
+  color: #0a66c2;
+}
+
+.post-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.post-header small {
+  color: #999;
+  font-size: 12px;
+}
+
+.post-image {
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+.post-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-btn,
+.dislike-btn,
+.comment-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-btn {
+  background-color: #0073b1;
+  color: white;
+}
+
+.dislike-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-section .comment-btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073b1;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="chat.css" />
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Users TOP bar -->
+      <div class="users-sidebar">
+        <div class="current-user">
+          <img
+            id="currentUserProfile"
+            src="https://t3.ftcdn.net/jpg/05/91/58/36/360_F_591583639_JaAqX4y6rORJshkPtctq5weTeNQ92js6.jpg"
+            alt="profile"
+          />
+          <span id="currentUserName"></span>
+        </div>
+        <div id="usersList"></div>
+      </div>
+
+      <!-- Chat top  header section -->
+      <div class="chat-section">
+        <div id="chatHeader" class="chat-header">
+          <img id="selectedUserProfile" src="" alt="" />
+          <span id="selectedUserName"></span>
+        </div>
+
+        <!-- //right side chat section -->
+        <div id="chatMessages" class="chat-messages"></div>
+        <!-- bottom chatbar  -->
+        <div class="chat-input">
+          <!-- image upload -->
+          <label for="imageInput" class="image-upload">
+            <i class="fas fa-image"></i>
+            <input
+              type="file"
+              id="imageInput"
+              accept="image/*"
+              style="display: none"
+            />
+          </label>
+          <!-- text write -->
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Type a message..."
+          />
+
+          <button onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="chat.js"></script>
+  </body>
+</html>

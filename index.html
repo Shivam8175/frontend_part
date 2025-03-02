@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">Echosphere</div>
+        <input type="text" placeholder="Search" />
+        <div class="nav-icons">
+          <a href="index.html">🏠</a>
+          <a href="network.html">👥</a>
+          <a href="job.html">💼</a>
+          <a href="chat.html">💬</a>
+          <span title="Notifications">🔔</span>
+        </div>
+        <button><a href="signup.html">SignUp</a></button>
+        <button><a href="login.html">Login</a></button>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar left-sidebar">
+        <div class="profile-card">
+          <img
+          src="data:image/jpeg;base64,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""
+          alt="Profile" />
+          <h3>John Doe</h3>
+          <p>Software Engineer at Echosphere</p>
+          <a href="person.html">View Profile</a>
+        </div>
+        <div class="sidebar-links">
+          <a href="#">Connections (500+)</a>
+          <a href="#">Saved Items</a>
+          <a href="#">Groups</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="post-input">
+          <img
+            src="https://cdn.taggbox.com/v7/taggbox.com/blog/wp-content/uploads/2024/08/good-linkedin-post-examples.png"
+            style="width: 100px !important; height: 100px !important"
+            alt="User"
+            class="user-avatar"
+          />
+          <textarea placeholder="Start a post" rows="3"></textarea>
+          <button onclick="createPost()">Post</button>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
+              alt="User"
+            />
+            <div>
+              <h4>Sarah Johnson</h4>
+              <p>Marketing Director • 2nd</p>
+              <small>1h ago</small>
+            </div>
+          </div>
+          <p>
+            Excited to announce our new product launch! Check out the details
+            below.
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMJEEKwV7BiGMxCy-Lq6elV_PyeSzEohN8g&s"
+            alt="Post Image"
+            class="post-image"
+          />
+          <div class="post-actions">
+            <button class="like-btn">👍 Like</button>
+            <button class="dislike-btn">👎 Dislike</button>
+          </div>
+          <div class="comment-section">
+            <textarea placeholder="Add a comment..." rows="2"></textarea>
+            <button class="comment-btn">Comment</button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+              alt="User"
+            />
+            <div>
+              <h4>Michael Chen</h4>
+              <p>Software Developer • 1st</p>
+              <small>3h ago</small>
+            </div>
+          </div>
+          <p>
+            Just finished a great coding session. Here's what I learned about
+            React hooks today!
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9he_mrlEc9Z7oyp4x--ccWgFLhNkjY4EiA&s"
+            alt="Post Image"
+            class="post-image"
+          />
+          <div class="post-actions">
+            <button class="like-btn">👍 Like</button>
+            <button class="dislike-btn">👎 Dislike</button>
+          </div>
+          <div class="comment-section">
+            <textarea placeholder="Add a comment..." rows="2"></textarea>
+            <button class="comment-btn">Comment</button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
+              alt="User"
+            />
+            <div>
+              <h4>Emma Williams</h4>
+              <p>HR Manager • 3rd</p>
+              <small>5h ago</small>
+            </div>
+          </div>
+          <p>
+            Looking to hire talented individuals for our growing team. DM me if
+            interested!
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjKuY9d2amj0xkb3hB96NbV3_JJaakukH8A&s"
+            alt="Post Image"
+            class="post-image"
+          />
+          <div class="post-actions">
+            <button class="like-btn">👍 Like</button>
+            <button class="dislike-btn">👎 Dislike</button>
+          </div>
+          <div class="comment-section">
+            <textarea placeholder="Add a comment..." rows="2"></textarea>
+            <button class="comment-btn">Comment</button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="sidebar right-sidebar">
+        <h3>Trending News</h3>
+        <ul>
+          <li>Tech industry sees 15% growth in Q1</li>
+          <li>New AI regulations announced</li>
+          <li>Remote work trends for 2025</li>
+          <li>Echosphere wins innovation award</li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>

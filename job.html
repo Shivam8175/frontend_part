@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Jobs Clone</title>
+    <link rel="stylesheet" href="job.css" />
+    <script defer src="job.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">Echosphere</div>
+        <input type="text" placeholder="Search Jobs" id="job-search" />
+        <div class="nav-icons">
+          <a href="index.html">🏠 Home</a>
+          <a href="network.html">👥</a>
+          <a href="job.html">💼 Jobs</a>
+          <a href="chat.html">💬</a>
+          <span>🔔</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="jobs-page">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <label>Job Type</label>
+        <select id="job-type">
+          <option value="all">All</option>
+          <option value="full-time">Full Time</option>
+          <option value="part-time">Part Time</option>
+          <option value="remote">Remote</option>
+        </select>
+
+        <label>Location</label>
+        <select id="job-location">
+          <option value="all">All</option>
+          <option value="new-york">New York</option>
+          <option value="san-francisco">San Francisco</option>
+          <option value="remote">Remote</option>
+        </select>
+
+        <button onclick="filterJobs()">Apply Filters</button>
+      </aside>
+
+      <section class="job-listings">
+        <h2>Job Openings</h2>
+        <div class="jobs" id="jobs-container">
+          <!-- Jobs will be added here dynamically -->
+        </div>
+      </section>
+
+      <aside class="job-details">
+        <h2>Job Details</h2>
+        <div id="job-info">
+          <p>Select a job to view details.</p>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
